@@ -1,0 +1,392 @@
+.credit {
+    color : lightgray;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    left: 0;
+    bottom: 0;
+
+}
+/* css message d'erreur login */
+.errorlogin {color:red; font-weight: bold;}
+
+#currentUser{
+    margin: 1em;
+    padding-left: 140px;
+    text-transform: capitalize;
+    position: relative;
+}
+form {
+    /* Pour le centrer dans la page */
+    margin: 0 auto;
+
+    /* Pour voir les limites du formulaire */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+
+div + div {
+   /* margin-top: 1em;*/
+}
+
+label {
+    /* Afin de s'assurer que toutes les étiquettes aient la même dimension et soient alignées correctement */
+    display: inline-block;
+    text-align: right;
+
+}
+
+input, textarea {
+    /* Afin de s'assurer que tous les champs textuels utilisent la même police
+       Par défaut, textarea utilise une police à espacement constant */
+    font: 1em sans-serif;
+
+    /* Pour donner la même dimension à tous les champs textuels */
+   width: 25%;
+
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* Pour harmoniser l'apparence des bordures des champs textuels */
+    border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+    /* Afin de réhausser les éléments actifs */
+    border-color: #000;
+}
+
+textarea {
+    /* Pour aligner correctement les champs multilignes et leurs étiquettes */
+    vertical-align: top;
+
+    /* Pour donner assez d'espace pour entrer du texte */
+    height: 5em;
+
+    /* Pour permettre aux utilisateurs de redimensionner un champ textuel horizontalement
+       Cela ne marche pas avec tous les navigateurs  */
+    resize: vertical;
+}
+
+.button {
+    /* Pour positionner les boutons de la même manière que les champs textuels */
+    padding-left: 90px; /* même dimension que les étiquettes */
+}
+
+button {
+    /* Cette marge représente approximativement le même espace
+       que celui entre les étiquettes et les champs textuels */
+    margin-left: .5em;
+}
+
+/* css pour le tableau*/
+
+
+/* page de recherche */
+.edit{
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    text-decoration: underline;
+}
+
+.listechute {
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 0;
+    text-align: center;
+}
+.listechute:after {
+    display: inline-block;
+    margin: 0 0 8px 20px;
+    height: 3px;
+    content: " ";
+    text-shadow: none;
+    background-color: #999;
+    width: 140px;
+}
+.listechute:before {
+    display: inline-block;
+    margin: 0 20px 8px 0;
+    height: 3px;
+    content: " ";
+    text-shadow: none;
+    background-color: #999;
+    width: 140px;
+}
+
+.labelchute{
+    width: 200px;
+    text-align: left;
+}
+form { box-shadow: 6px 6px 6px lightgray ;}
+fieldset legend {
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 1em;
+}
+
+.boutonsubmit {
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.listetable{
+ margin-bottom: 5em;
+}
+
+
+/* css page ajout */
+
+.divajout{
+    display: inline-block;
+}
+
+#formadduser{
+    margin-top: -25%;
+    width: 100%;
+}
+
+
+/* css pour l'etiquette */
+
+.etiquette{
+    text-align: center;
+}
+
+.etiquette p {
+    font-size: 1.5em;
+    color: black;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    margin: auto;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    color: #1388f4;
+    text-decoration: underline;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    color: #1388f4;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+}
+.tabcontents {
+    padding: 6px 12px;
+}
+
+.tabcontentPrint{
+    padding: 6px 12px;
+}
+
+#modifrack{
+    width: 200px;
+    padding: 0.5em;
+    display: inline-block;
+}
+#modifrack select{
+  float: left;
+  width: 125px;
+}
+
+#modifrack a{
+  float: right;
+  width: 50px;
+  font-size: 27px;
+}
+
+/* css bouton edit */
+.buttonedit{
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+    padding: 4px 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 75px;
+}
+.buttonedit:hover{
+    background-color: #4CAF50;
+    color: white;
+}
+/* css fieldset add form*/
+
+.form_add{
+  font-weight: bold;
+}
+
+/* css print button */
+
+#printbutton, #printbutton_section{
+  display: inline-block;
+}
+
+/* css page "volume à couper" */
+
+.buttonvol i{
+  color:red;
+}
+
+.statusvol {
+  width: 500px;
+  float: right;
+}
+.statustable td{
+  padding: 8px;
+  text-align: left;
+}
+.stylestatus{
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+
+/* usevol css */
+
+.useVolContainer{
+  display: inline-block; /* bloc div qui contient la div useVolinfo & useVolchutes */
+  width:100%;
+  height: 100%;
+}
+.useVolinfo{
+  float: left;
+  width: 20%;
+  padding: 10px;
+  margin: 10px;
+}
+.useVolinfo h5, .useVolchutes h5 {text-decoration: underline;}
+
+.useVolchutes{
+  float: left;
+   width: 75%;
+   padding: 10px;
+   margin: 5px;
+   border-left: 1px solid black;
+}
+.useVolchutes h3 {
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+.useVolContainer span {
+  font-weight: bold;
+}
+.useVolContainer li{
+  list-style-type: circle;
+}
+
+#findtable tfoot input, #modiftable tfoot input, #usevoltable tfoot input  {
+        width: 100%;
+        padding: 3px;
+        box-sizing: border-box;
+    }
+
+    .danger {color: red; font-weight: bold;}
+
+
+.backUseVol {
+  border: 1px solid black;
+  border-radius: 3px;
+  margin: 5px;
+  padding: 2px;
+  color: #007bff;
+}
+
+#headerlistVol {
+  padding: 10px;
+  margin: 10px;
+}
+.plateau{
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 1.1em;
+}
+
+#formnewloss, #newVolume, #newOp, #newType, #newRack, #newEmp, #editRack, #editPlat, #editChute, .newplat{
+  width: 60%;
+}
+
+#newplatUseVol{
+  width: 90%;
+}
+
+.deleteloss{
+   color:red;
+}
+.updateloss{
+  color:green;
+}
+
+.printarea{
+  border: 1px solid black;
+  width: 100%;
+  color: black;
+}
+.printarea span{
+  font-size: 45px;
+}
+.item{
+  text-align: right;
+  margin: 15px;
+}
+.item2{
+  text-align: center;
+}
+
+.infodroit{
+  color: green;
+  margin: 5px;
+  padding: 5px;
+}
+
+.importation{
+	border: none;
+padding: 5px;
+font: 24px/36px sans-serif;
+width: 200px;
+height: 200px;
+overflow: scroll;
+}
+
+pre {
+  background-color: lightblue;
+  width: 900px;
+  height: 500px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+}
+.titlelog{
+  margin: 10px;
+}
