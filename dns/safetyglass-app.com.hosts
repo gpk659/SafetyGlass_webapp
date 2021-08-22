@@ -1,0 +1,20 @@
+;
+; BIND reverse data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	ns.safetyglass-app.com. root.safetyglass-app.com. (
+			      1		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+	IN	A	145.14.158.76
+;
+@	IN	NS	ns.safetyglass-app.com.
+@	IN	A	145.14.158.76
+@	IN	AAAA	::1
+ns	IN	A	145.14.158.76
+
+web	IN	A	145.14.158.76
+
+www	IN	CNAME	web

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Dialog - Animation</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <style>
+    .comment{
+      margin: 1em;
+      padding: 1em;
+      border: 1px solid black;
+      width: 150px;
+    }
+    .comment:hover{
+        border: 1px solid blue;
+        background-color: red;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#dialog-confirm" ).dialog({
+      autoOpen: false,
+
+      buttons: {
+        "Supprimer": function() {
+          $( this ).dialog( "close" );
+          console.log('suppression');
+          window.location.replace("http://localhost/SafetyGlassProject/index.php");
+        },
+        "Annuler": function() {
+          $( this ).dialog( "close" );
+          console.log('annulation de la suppression');
+          return false;
+        }
+      }
+    });
+
+    $( "#opener" ).on( "click", function() {
+      $( "#dialog-confirm" ).dialog( "open" );
+    });
+  } );
+  </script>
+
+</head>
+<body>
+  <div class="comment" id="editCom">
+    <p>
+      Commentaire
+    </p>
+  </div>
+  <div id="dialog-confirm" title="Empty the recycle bin?">
+    <p><span class="ui-icon ui-icon-alert" style="float:left; margin:12px 12px 20px 0;"></span>Etes vous sur de vouloir supprimer le volume suivant : ... ?</p>
+  </div>
+
+<button id="opener">Open Dialog</button>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+
+.etiquette{
+    color: black;
+    margin: 3em;
+    text-align: center;
+}
+
+#cssmenu, form, #currentUser, footer, #rack , #comment, .boutonsubmit, #titleform, a{ display: none;}
+
+#formnewloss fieldset legend { display: none;}
+
+.printarea{
+  border: 1px solid black;
+  /*width: 100%;*/
+  color: black;
+}
+.printarea span{
+  font-size: 90px;
+}
+.item{
+  text-align: right;
+  margin: 15px;
+}
+
+.item2{
+  text-align: center;
+  font-size: 90px;
+}
+
+
+/* align */
+.firstline {
+    text-align: justify;
+
+    /* ie 7*/
+    *width: 100%;
+    *-ms-text-justify: distribute-all-lines;
+    *text-justify: distribute-all-lines;
+}
